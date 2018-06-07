@@ -1,0 +1,626 @@
+
+################################################################################
+# 去掉apollo标注服务手册组，直接归到modules组
+/*
+ * @~english @defgroup am_serv_ref_man AMetal Standard Service Reference
+ * @~chinese @defgroup am_serv_ref_man AMetal 裸机标准服务参考手册
+ * @~ @{
+ */
+################################################################################
+
+/**
+ * @~english @defgroup am_service_hardware HW Service
+ * @~chinese @defgroup am_service_hardware HW层服务
+ * @~english @brief Provide register access and basic hardware service, e.g. USART, Timer, ADC
+ * @~chinese @brief 提供寄存器访问接口的基本的硬件操作服务，例如串口、定时器、模数转换
+ * @~ @{
+ */
+ 
+/** @~english @defgroup  amhw_if_adc        ADC */
+/** @~chinese @defgroup  amhw_if_adc        ADC模数转换*/
+/** @~english @defgroup  amhw_if_clock      clock */
+/** @~chinese @defgroup  amhw_if_clock      clock时钟提供 */
+/** @~english @defgroup  amhw_if_cmp        CMP */
+/** @~chinese @defgroup  amhw_if_cmp        CMP模拟比较 */
+/** @~english @defgroup  amhw_if_dac        DAC*/
+/** @~chinese @defgroup  amhw_if_dac        DAC数模转换*/
+/** @~english @defgroup  amhw_if_dma        DMA*/
+/** @~chinese @defgroup  amhw_if_dma        DMA*/
+/** @~english @defgroup  amhw_if_dma_chan   DMA channel */
+/** @~chinese @defgroup  amhw_if_dma_chan   DMA通道 */
+/** @~english @defgroup  amhw_if_ftfa       FTFA */
+/** @~chinese @defgroup  amhw_if_ftfa       FLASH存储控制 */
+/** @~english @defgroup  amhw_if_gpio       GPIO */
+/** @~chinese @defgroup  amhw_if_gpio       I/O引脚 */
+/** @~english @defgroup  amhw_if_i2s        I2S */
+/** @~chinese @defgroup  amhw_if_i2s        I2S音频总线*/
+/** @~english @defgroup  amhw_if_i2c        I2C */
+/** @~chinese @defgroup  amhw_if_i2c        I2C总线控制器*/
+/** @~english @defgroup  amhw_if_int        NVIC */
+/** @~chinese @defgroup  amhw_if_int        NVIC中断控制器*/
+/** @~english @defgroup  amhw_if_inum       INT NUMBER*/
+/** @~chinese @defgroup  amhw_if_inum       INUM中断向量号*/
+/** @~english @defgroup  amhw_if_llwu       LLWU*/
+/** @~chinese @defgroup  amhw_if_llwu       LLMU低功耗唤醒*/
+/** @~english @defgroup  amhw_if_lptmr      LPTMR */
+/** @~chinese @defgroup  amhw_if_lptmr      LPTMR低功耗定时器 */
+/** @~english @defgroup  amhw_if_mcg        MCG*/
+/** @~chinese @defgroup  amhw_if_mcg        MCG多用途时钟发生器*/
+/** @~english @defgroup  amhw_if_mcm        MCM*/
+/** @~chinese @defgroup  amhw_if_mcm        MCM杂项控制*/
+/** @~english @defgroup  amhw_if_pinctrl    PORT */
+/** @~chinese @defgroup  amhw_if_pinctrl    PORT引脚配置*/
+/** @~english @defgroup  amhw_if_pin        PIN */
+/** @~chinese @defgroup  amhw_if_pin        PIN引脚配置定义 */
+/** @~english @defgroup  amhw_if_pit        PIT */
+/** @~chinese @defgroup  amhw_if_pit        PIT周期性中断定时器 */
+/** @~english @defgroup  amhw_if_pmc        PMC*/
+/** @~chinese @defgroup  amhw_if_pmc        PMC电源管理*/
+/** @~english @defgroup  amhw_if_rcm        RCM*/
+/** @~chinese @defgroup  amhw_if_rcm        RCM复位控制*/
+/** @~english @defgroup  amhw_if_rtc        RTC */
+/** @~chinese @defgroup  amhw_if_rtc        RTC实时时钟 */
+/** @~english @defgroup  amhw_if_sim        SIM*/
+/** @~chinese @defgroup  amhw_if_sim        SIM系统集成控制*/
+/** @~english @defgroup  amhw_if_smc        SMC*/
+/** @~chinese @defgroup  amhw_if_smc        SMC系统模式控制*/
+/** @~english @defgroup  amhw_if_spi        SPI*/
+/** @~chinese @defgroup  amhw_if_spi        SPI总线控制器*/
+/** @~english @defgroup  amhw_if_systick    SYSTICK*/
+/** @~chinese @defgroup  amhw_if_systick    SYSTICK系统滴答时钟*/
+/** @~english @defgroup  amhw_if_tpm        TPM */
+/** @~chinese @defgroup  amhw_if_tpm        Timer/PWM定时器*/
+/** @~english @defgroup  amhw_if_tsi        TSI */
+/** @~chinese @defgroup  amhw_if_tsi        TSI触摸检测 */
+/** @~english @defgroup  amhw_if_uart       UART */
+/** @~chinese @defgroup  amhw_if_uart       UART串口 */
+
+/** @~english @defgroup  amhw_if_amks16z    MKS16Z peripheral  */
+/** @~chinese @defgroup  amhw_if_amks16z    MKS16Z外设定义     */
+
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup am_service_drivers Drivers
+ * @~chinese @defgroup am_service_drivers 驱动
+ * @~english @brief Provide all peripherals drivers, e.g. ADC, USART, Timer
+ * @~chinese @brief 提供所有外设驱动
+ * @~ @{
+ */
+
+/** @~english @defgroup  amdr_if_adc            ADC */
+/** @~chinese @defgroup  amdr_if_adc            ADC模数转换 */
+/** @~english @defgroup  amdr_if_dac            DAC*/
+/** @~chinese @defgroup  amdr_if_dac            DAC数模转换*/
+/** @~english @defgroup  amdr_if_dma            DMA*/
+/** @~chinese @defgroup  amdr_if_dma            DMA*/
+/** @~english @defgroup  amdr_if_ftfa           FTFA */
+/** @~chinese @defgroup  amdr_if_ftfa           FLASH存储控制 */
+/** @~english @defgroup  amdr_if_gpio           GPIO */
+/** @~chinese @defgroup  amdr_if_gpio           GPIO */
+/** @~english @defgroup  amdr_if_gpio_util      GPIO_UTIL */
+/** @~chinese @defgroup  amdr_if_gpio_util      GPIO工具宏 */
+/** @~english @defgroup  amdr_if_i2c            I2C            */
+/** @~chinese @defgroup  amdr_if_i2c            I2C总线控制器 */
+/** @~english @defgroup  amdr_if_int            NVIC            */
+/** @~chinese @defgroup  amdr_if_int            NVIC中断控制器 */
+/** @~english @defgroup  amdr_if_pit_timing     PIT */
+/** @~chinese @defgroup  amdr_if_pit_timing     PIT周期性中断定时器 */
+/** @~english @defgroup  amdr_if_pmu            PMU */
+/** @~chinese @defgroup  amdr_if_pmu            PMU电源管理配置 */
+/** @~english @defgroup  amdr_if_rtc            RTC */
+/** @~chinese @defgroup  amdr_if_rtc            RTC实时时钟 */
+/** @~english @defgroup  amdr_if_spi            SPI*/
+/** @~chinese @defgroup  amdr_if_spi            SPI总线控制器*/
+/** @~english @defgroup  amdr_if_tpm_cap        TPM capture*/
+/** @~chinese @defgroup  amdr_if_tpm_cap        TPM 捕获*/
+/** @~english @defgroup  amdr_if_tpm_pwm        TPM PWM*/
+/** @~chinese @defgroup  amdr_if_tpm_pwm        TPM PWM*/
+/** @~english @defgroup  amdr_if_tpm_timing     TPM timing*/
+/** @~chinese @defgroup  amdr_if_tpm_timing     TPM 定时*/
+/** @~english @defgroup  amdr_if_tsi            TSI */
+/** @~chinese @defgroup  amdr_if_tsi            TSI触摸检测 */
+/** @~english @defgroup  amdr_if_uart           UART*/
+/** @~chinese @defgroup  amdr_if_uart           UART串口*/
+/** @~english @defgroup  amdr_if_wdt            WDT*/
+/** @~chinese @defgroup  amdr_if_wdt            WDT软件看门狗 */
+/** @~english @defgroup  amdr_if_lptmr_timing   LPTMR*/
+/** @~chinese @defgroup  amdr_if_lptmr_timing   LPTMR低功耗定时器 */
+
+/** @~ @} */
+
+################################################################################
+
+
+/**
+ * @~english @defgroup am_service_standard Standard interface
+ * @~chinese @defgroup am_service_standard 标准设备服务接口
+ * @~english @brief provide standard device interface, e.g. ADC, Timer, PWM, CAP
+ * @~chinese @brief 提供标准设备服务接口，例如ADC，Timer, PWM, CAP。
+ * @~ @{
+ */
+/** @~english @defgroup  am_if_adc           ADC */
+/** @~chinese @defgroup  am_if_adc           ADC模数转换 */
+/** @~english @defgroup  am_if_dac           DAC */
+/** @~chinese @defgroup  am_if_dac           DAC数模转换 */
+/** @~english @defgroup  am_if_rtc           RTC */
+/** @~chinese @defgroup  am_if_rtc           RTC */
+/** @~english @defgroup  am_if_timer         TIMER */
+/** @~chinese @defgroup  am_if_timer         TIMER */
+/** @~english @defgroup  am_if_wait          WAIT */
+/** @~chinese @defgroup  am_if_wait          WAIT */
+/** @~english @defgroup  am_if_pwm           PWM */
+/** @~chinese @defgroup  am_if_pwm           PWM脉冲宽度调制 */
+/** @~english @defgroup  am_if_cap           CAP */
+/** @~chinese @defgroup  am_if_cap           输入捕获 */
+/** @~english @defgroup  am_if_uart          UART */
+/** @~chinese @defgroup  am_if_uart          串口 */
+/** @~english @defgroup  am_if_uart_int      UART interrupt mode */
+/** @~chinese @defgroup  am_if_uart_int      串口（中断模式） */
+/** @~english @defgroup  am_if_uart_ringbuf  UART with ring buffer */
+/** @~chinese @defgroup  am_if_uart_ringbuf  串口（环形缓冲区） */
+/** @~english @defgroup  am_if_buzzer_pwm    buzzer */
+/** @~chinese @defgroup  am_if_buzzer_pwm    蜂鸣器 */
+/** @~english @defgroup  am_if_led           LED */
+/** @~chinese @defgroup  am_if_led           LED设备 */
+/** @~english @defgroup  am_if_crc           CRC */
+/** @~chinese @defgroup  am_if_crc           CRC校验 */
+/** @~english @defgroup  am_if_gpio          GPIO */
+/** @~chinese @defgroup  am_if_gpio          GPIO引脚 */
+/** @~english @defgroup  am_if_gpio_util     GPIO util */
+/** @~chinese @defgroup  am_if_gpio_util     GPIO通用工具 */
+/** @~english @defgroup  am_if_debug         Debug */
+/** @~chinese @defgroup  am_if_debug         调试单元 */
+/** @~english @defgroup  am_if_delay         delay */
+/** @~chinese @defgroup  am_if_delay         延时服务 */
+/** @~english @defgroup  am_if_i2c           I2C     */
+/** @~chinese @defgroup  am_if_i2c           I2C总线控制器 */
+/** @~english @defgroup  am_if_spi           SPI     */
+/** @~chinese @defgroup  am_if_spi           SPI总线控制器 */
+/** @~english @defgroup  am_if_wdt           WDT     */
+/** @~chinese @defgroup  am_if_wdt           看门狗  */
+/** @~english @defgroup  am_if_int           Interrupt     */
+/** @~chinese @defgroup  am_if_int           中断  */
+/** @~ @} */
+
+################################################################################
+
+
+/**
+ * @~english @defgroup am_service_util Common util
+ * @~chinese @defgroup am_service_util 通用工具
+ * @~english @brief provide common tools, e.g. ring buffer, bit operation
+ * @~chinese @brief 提供通用工具，例如环形缓冲区、位操作等服务
+ * @~ @{
+ */
+ 
+/** @~english @defgroup  am_if_types     common type  */
+/** @~chinese @defgroup  am_if_types     通用类型 */
+/** @~english @defgroup  am_if_ringbuf   Ring Buffer */
+/** @~chinese @defgroup  am_if_ringbuf   环形缓冲区 */
+/** @~english @defgroup  am_if_bitops    Bit operation */
+/** @~chinese @defgroup  am_if_bitops    位操作 */
+/** @~english @defgroup  am_if_byteops   Byte Operation */
+/** @~chinese @defgroup  am_if_byteops   字节操作 */
+/** @~english @defgroup  am_if_common    common macro */
+/** @~chinese @defgroup  am_if_common    通用宏 */
+/** @~english @defgroup  am_if_errno     error number */
+/** @~chinese @defgroup  am_if_errno     错误号 */
+
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup am_service_demo_device Device Demo
+ * @~chinese @defgroup am_service_demo_device 外设使用例程
+ * @~english @brief Provide demos for devices, e.g. SPI, I2C, UART
+ * @~chinese @brief 提供外设使用例程，例如SPI、I2C，UART
+ * @~ @{
+ */
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_adc_all          ADC
+ * @~chinese @defgroup  am_demo_adc_all          ADC模数转换
+ * @~english @brief The all Demos for use ADC
+ * @~chinese @brief 所有的ADC模数转换相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup demo_if_hw_adc_poll       poll mode(hw layer) */
+    /** @~chinese @defgroup demo_if_hw_adc_poll       查询模式（硬件层）*/
+    /** @~english @defgroup demo_if_hw_adc_int        interrupt mode(hw layer) */
+    /** @~chinese @defgroup demo_if_hw_adc_int        中断模式（硬件层）*/
+    /** @~english @defgroup demo_if_std_adc_sw        sw triger(std layer) */
+    /** @~chinese @defgroup demo_if_std_adc_sw        软件触发（标准层）*/
+    /** @~english @defgroup demo_if_std_adc_hw        hw triger(std layer) */
+    /** @~chinese @defgroup demo_if_std_adc_hw        硬件触发（标准层）*/
+    /** @~english @defgroup demo_if_std_adc_hwavg     hw triger and hw avg(std layer) */
+    /** @~chinese @defgroup demo_if_std_adc_hwavg     硬件触发且转换平均（标准层）*/
+    /** @~english @defgroup demo_if_std_adc_hwcmp     hw triger and result cmp(std layer)*/
+    /** @~chinese @defgroup demo_if_std_adc_hwcmp     硬件触发且结果比较（标准层）*/
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_awic_all          AWIC
+ * @~chinese @defgroup  am_demo_awic_all          AWIC异步唤醒
+ * @~english @brief The all Demos for use AWIC
+ * @~chinese @brief 所有的异步唤醒中断的相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_awic_pint     asynchronous wake up */
+    /** @~chinese @defgroup  demo_if_hw_awic_pint     MCU睡眠下异步唤醒 */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_cmp_all          CMP
+ * @~chinese @defgroup  am_demo_cmp_all          CMP模拟比较器
+ * @~english @brief The all Demos for use CMP
+ * @~chinese @brief 所有的模拟比较器相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_cmp_int    Comparator module example*/
+    /** @~chinese @defgroup  demo_if_hw_cmp_int    模拟比较器电压比较 */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_dac_all          DAC
+ * @~chinese @defgroup  am_demo_dac_all          DAC数模转换
+ * @~english @brief The all Demos for use DAC
+ * @~chinese @brief 所有的DAC数模转换相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_dac    */
+    /** @~chinese @defgroup  demo_if_hw_dac    */
+    /** @~english @defgroup  demo_if_hw_dac_buf_int    */
+    /** @~chinese @defgroup  demo_if_hw_dac_buf_int    */
+    /** @~english @defgroup  demo_if_std_dac    */
+    /** @~chinese @defgroup  demo_if_std_dac    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_dma_all          DMA
+ * @~chinese @defgroup  am_demo_dma_all          DMA
+ * @~english @brief The all Demos for use DMA
+ * @~chinese @brief 所有的DMA相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_std_dma_m2m    */
+    /** @~chinese @defgroup  demo_if_std_dma_m2m    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_ftfa_all          FTFA
+ * @~chinese @defgroup  am_demo_ftfa_all          FLASH存储控制
+ * @~english @brief The all Demos for use FLASH存储控制
+ * @~chinese @brief 所有的FLASH存储控制相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_dr_ftfa    */
+    /** @~chinese @defgroup  demo_if_dr_ftfa    */
+    /** @~english @defgroup  demo_if_hw_ftfa    */
+    /** @~chinese @defgroup  demo_if_hw_ftfa    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_fgpio_all          FGPIO
+ * @~chinese @defgroup  am_demo_fgpio_all          快速GPIO
+ * @~english @brief The all Demos for use fgpio
+ * @~chinese @brief 所有的FGPIO相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_fgpio    */
+    /** @~chinese @defgroup  demo_if_hw_fgpio    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_gpio_all          GPIO
+ * @~chinese @defgroup  am_demo_gpio_all          GPIO
+ * @~english @brief The all Demos for use gpio
+ * @~chinese @brief 所有的GPIO相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_gpio    */
+    /** @~chinese @defgroup  demo_if_hw_gpio    */
+    /** @~english @defgroup  demo_if_std_gpio    */
+    /** @~chinese @defgroup  demo_if_std_gpio    */
+    /** @~english @defgroup  demo_if_std_gpio_trigger    */
+    /** @~chinese @defgroup  demo_if_std_gpio_trigger    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_int_all          NVIC
+ * @~chinese @defgroup  am_demo_int_all          NVIC中断控制器
+ * @~english @brief The all Demos for use INT
+ * @~chinese @brief 所有的中断控制器相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_std_int_keyscan    interrupt example*/
+    /** @~chinese @defgroup  demo_if_std_int_keyscan    NVIC使用例程 */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_pit_all          PIT
+ * @~chinese @defgroup  am_demo_pit_all          PIT周期性中断定时器
+ * @~english @brief The all Demos for use pit
+ * @~chinese @brief 所有的周期性中断定时器相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_pit_2_32bit_timer    */
+    /** @~chinese @defgroup  demo_if_hw_pit_2_32bit_timer    */
+    /** @~english @defgroup  demo_if_std_pit_1_64bit_timer   */
+    /** @~chinese @defgroup  demo_if_std_pit_1_64bit_timer   */
+    /** @~english @defgroup  demo_if_std_pit_2_32bit_timer   */
+    /** @~chinese @defgroup  demo_if_std_pit_2_32bit_timer   */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_pmu_all          PMU
+ * @~chinese @defgroup  am_demo_pmu_all          PMU电源管理
+ * @~english @brief The all Demos for use pmu
+ * @~chinese @brief 所有的PMU电源管理相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_std_pmu_lowpower    */
+    /** @~chinese @defgroup  demo_if_std_pmu_lowpower    */
+
+/** @~ @} */
+
+################################################################################
+/**
+ * @~english @defgroup  am_demo_lptmr_all          LPTMR
+ * @~chinese @defgroup  am_demo_lptmr_all          LPTMR低功耗定时器
+ * @~english @brief The all Demos for use LPTMR
+ * @~chinese @brief 所有的低功耗定时器相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_lptmr_timer     */
+    /** @~chinese @defgroup  demo_if_hw_lptmr_timer     */
+    /** @~english @defgroup  demo_if_std_lptmr_timer    */
+    /** @~chinese @defgroup  demo_if_std_lptmr_timer    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_rtc_all          RTC
+ * @~chinese @defgroup  am_demo_rtc_all          实时时钟
+ * @~english @brief The all Demos for use rtc
+ * @~chinese @brief 所有的RTC相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_std_rtc    */
+    /** @~chinese @defgroup  demo_if_std_rtc    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_spi_all          SPI
+ * @~chinese @defgroup  am_demo_spi_all          SPI
+ * @~english @brief The all Demos for use SPI
+ * @~chinese @brief 所有的SPI相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_spi_master    */
+    /** @~chinese @defgroup  demo_if_hw_spi_master    */
+    /** @~english @defgroup  demo_if_hw_spi_slave    */
+    /** @~chinese @defgroup  demo_if_hw_spi_slave    */
+    /** @~english @defgroup  demo_if_hw_spi_slave_dma    */
+    /** @~chinese @defgroup  demo_if_hw_spi_slave_dma    */
+    /** @~english @defgroup  demo_if_hw_spi_slave_irq    */
+    /** @~chinese @defgroup  demo_if_hw_spi_slave_irq    */
+    /** @~english @defgroup  demo_if_hw_spi_slave_match    */
+    /** @~chinese @defgroup  demo_if_hw_spi_slave_match    */
+    /** @~english @defgroup  demo_if_std_spi_master    */
+    /** @~chinese @defgroup  demo_if_std_spi_master    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_tpm_all          timer/PWM
+ * @~chinese @defgroup  am_demo_tpm_all          TPM定时器/PWM模块
+ * @~english @brief The all Demos for use tpm
+ * @~chinese @brief 所有的tpm相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_tpm_cap    */
+    /** @~chinese @defgroup  demo_if_hw_tpm_cap    */
+    /** @~english @defgroup  demo_if_hw_tpm_pwm    */
+    /** @~chinese @defgroup  demo_if_hw_tpm_pwm    */
+    /** @~english @defgroup  demo_if_hw_tpm_timer    */
+    /** @~chinese @defgroup  demo_if_hw_tpm_timer    */
+    /** @~english @defgroup  demo_if_std_tpm_cap    */
+    /** @~chinese @defgroup  demo_if_std_tpm_cap    */
+    /** @~english @defgroup  demo_if_std_tpm_pwm    */
+    /** @~chinese @defgroup  demo_if_std_tpm_pwm    */
+    /** @~english @defgroup  demo_if_std_tpm_timer    */
+    /** @~chinese @defgroup  demo_if_std_tpm_timer    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_tsi_all          TSI
+ * @~chinese @defgroup  am_demo_tsi_all          TSI
+ * @~english @brief The all Demos for use TSI
+ * @~chinese @brief 所有的TSI相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_tsi    */
+    /** @~chinese @defgroup  demo_if_hw_tsi    */
+    /** @~english @defgroup  demo_if_hw_tsi_int    */
+    /** @~chinese @defgroup  demo_if_hw_tsi_int    */
+    /** @~english @defgroup  demo_if_std_tsi_int   */
+    /** @~chinese @defgroup  demo_if_std_tsi_int   */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_uart_all          UART
+ * @~chinese @defgroup  am_demo_uart_all          UART
+ * @~english @brief The all Demos for use UART
+ * @~chinese @brief 所有的UART相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_uart_int    */
+    /** @~chinese @defgroup  demo_if_hw_uart_int    */
+    /** @~english @defgroup  demo_if_hw_uart_polling    */
+    /** @~chinese @defgroup  demo_if_hw_uart_polling    */
+    /** @~english @defgroup  demo_if_hw_uart_rx_dma    */
+    /** @~chinese @defgroup  demo_if_hw_uart_rx_dma    */
+    /** @~english @defgroup  demo_if_std_uart_int    */
+    /** @~chinese @defgroup  demo_if_std_uart_int    */
+    /** @~english @defgroup  demo_if_std_uart_polling    */
+    /** @~chinese @defgroup  demo_if_std_uart_polling    */
+    /** @~english @defgroup  demo_if_std_uart_ringbuf    */
+    /** @~chinese @defgroup  demo_if_std_uart_ringbuf    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_wdt_all          WDT
+ * @~chinese @defgroup  am_demo_wdt_all          WDT
+ * @~english @brief The all Demos for use wdt
+ * @~chinese @brief 所有的软件看门狗相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_wdt    */
+    /** @~chinese @defgroup  demo_if_hw_wdt    */
+    /** @~english @defgroup  demo_if_std_wdt    */
+    /** @~chinese @defgroup  demo_if_std_wdt    */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_tsi_all          TSI
+ * @~chinese @defgroup  am_demo_tsi_all          TSI
+ * @~english @brief The all Demos for use tsi
+ * @~chinese @brief 所有的输入触摸检测相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_tsi     */
+    /** @~chinese @defgroup  demo_if_hw_tsi     */
+    /** @~english @defgroup  demo_if_hw_tsi_int */
+    /** @~chinese @defgroup  demo_if_hw_tsi_int */    
+    /** @~english @defgroup  demo_if_std_tsi_int */
+    /** @~chinese @defgroup  demo_if_std_tsi_int */
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_i2c_all          I2C
+ * @~chinese @defgroup  am_demo_i2c_all          I2C
+ * @~english @brief The all Demos for use i2c
+ * @~chinese @brief 所有的I2C总线控制器相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_i2c_master      */
+    /** @~chinese @defgroup  demo_if_hw_i2c_master      */
+    /** @~english @defgroup  demo_if_hw_i2c_slave_int   */
+    /** @~chinese @defgroup  demo_if_hw_i2c_slave_int   */   
+    /** @~english @defgroup  demo_if_std_i2c_int_eeprom */
+    /** @~chinese @defgroup  demo_if_std_i2c_int_eeprom */    
+
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_demo_i2s_all          I2S
+ * @~chinese @defgroup  am_demo_i2s_all          I2S
+ * @~english @brief The all Demos for use i2s
+ * @~chinese @brief 所有的音频总线传输相关例程
+ * @~ @{
+ */
+    /** @~english @defgroup  demo_if_hw_i2s_int */
+    /** @~chinese @defgroup  demo_if_hw_i2s_int */
+    /** @~english @defgroup  demo_if_hw_i2s_polling */
+    /** @~chinese @defgroup  demo_if_hw_i2s_polling */    
+
+/** @~ @} */
+
+################################################################################
+/** @~ @} */
+
+################################################################################
+
+/**
+ * @~english @defgroup  am_service_examples_user_config          Example User Configure
+ * @~chinese @defgroup  am_service_examples_user_config          用户配置信息范例
+ * @~english @brief Provide examples for user configure, e.g. SPI, I2C, UART.The user can \n
+ *                  change the configure information according to the actual situation
+ * @~chinese @brief 提供外设配置范例，例如SPI、I2C、UART，用户可根据自己的需要修改配置信息
+ * @~ @{
+ */
+    /** @~english @defgroup  am_if_prj_config                   Project Config */
+    /** @~chinese @defgroup  am_if_prj_config                   工程配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_adc           ADC配置*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_adc           ADC配置*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_dac           DAC*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_dac           DAC配置*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_dma           DMA*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_dma           DMA配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_gpio          GPIO */
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_gpio          GPIO配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_int           INT*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_int           中断配置*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_i2c           I2C*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_i2c           I2C总线控制器*/    
+    /** @~english @defgroup  amdr_if_hwconfig_src_pit_timing    PIT timing */
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_pit_timing    PIT定时器配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_pmu           PMU */
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_pmu           PMU配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_rtc           RTC Config*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_rtc           RTC 配置*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_spi           SPI*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_spi           SPI配置*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_tpm_cap       TPM capture*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_tpm_cap       TPM捕获*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_tpm_pwm       TPM PWM*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_tpm_pwm       TPM PWM*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_tpm_timing    TPM timing*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_tpm_timing    TPM 定时*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_uart          UART*/
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_uart          UART配置*/
+    /** @~english @defgroup  amdr_if_hwconfig_src_wdt           WDT */
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_wdt           WDT配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_tsi           TSI */
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_tsi           TSI配置 */
+    /** @~english @defgroup  amdr_if_hwconfig_src_lptmr_timing  LPTMR */
+    /** @~chinese @defgroup  amdr_if_hwconfig_src_lptmr_timing  LPTMR配置 */
+    
+/** @~ @} */
+
+################################################################################
+
+
+
+# /** @} am_serv_ref_man */

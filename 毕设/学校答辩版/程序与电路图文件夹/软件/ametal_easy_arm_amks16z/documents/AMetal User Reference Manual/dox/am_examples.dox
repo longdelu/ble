@@ -1,0 +1,136 @@
+# 加入所有的example，使调用处形成连接关系
+
+############################## ADC Examples #################################
+/**
+ * \example demo_hw_adc_poll.c
+ * \example demo_hw_adc_int.c
+ * \example demo_std_adc_hw.c
+ * \example demo_std_adc_hwavg.c
+ * \example demo_std_adc_hwcmp.c
+ * \example demo_std_adc_sw.c
+ */
+
+############################## AWIC Examples #################################
+/**
+ * \example demo_hw_awic_pint.c
+ */
+
+############################## CMP Examples #################################
+/**
+ * \example demo_hw_cmp_int.c
+ */
+
+############################## DAC Examples #################################
+/**
+ * \example demo_hw_dac.c
+ * \example demo_hw_dac_buf_int.c
+ * \example demo_std_dac.c
+ */
+
+############################## DMA Examples #################################
+/**
+ * \example demo_std_dma_m2m.c
+ */
+
+############################## FTFA Examples ################################
+/**
+ * \example demo_dr_ftfa.c
+ * \example demo_hw_ftfa.c
+ */
+
+############################## FGPIO Examples ###############################
+/**
+ * \example demo_hw_fgpio.c
+ */
+
+############################## FGPIO Examples ###############################
+/**
+ * \example demo_hw_gpio.c
+ * \example demo_std_gpio.c
+ * \example demo_std_gpio_trigger.c
+ */
+
+############################## INT Examples #################################
+/**
+ * \example demo_std_int_keyscan.c
+ */
+
+ ############################## I2C Examples #################################
+/**
+ * \example demo_hw_i2c_master.c
+ * \example demo_hw_i2c_slave_int.c
+ * \example demo_std_i2c_int_eeprom.c
+ */
+ 
+############################## PIT Examples #################################
+/**
+ * \example demo_hw_pit_2_32bit_timer.c
+ * \example demo_std_pit_1_64bit_timer.c
+ * \example demo_std_pit_2_32bit_timer.c
+ */
+
+############################## RTC Examples #################################
+/**
+ * \example demo_std_rtc.c
+ */
+
+############################## SPI Examples #################################
+/**
+ * \example demo_hw_spi_master.c
+ * \example demo_hw_spi_slave.c
+ * \example demo_hw_spi_slave_dma.c
+ * \example demo_hw_spi_slave_match.c
+ * \example demo_std_spi_master.c
+ * \example demo_hw_spi_slave_irq.c
+ */
+
+############################## TPM Examples #################################
+/**
+ * \example demo_hw_tpm_cap.c
+ * \example demo_hw_tpm_pwm.c
+ * \example demo_hw_tpm_timer.c
+ * \example demo_std_tpm_cap.c
+ * \example demo_std_tpm_pwm.c
+ * \example demo_std_tpm_timer.c
+ */
+
+############################## TSI Examples #################################
+/**
+ * \example demo_hw_tsi.c
+ * \example demo_hw_tsi_int.c
+ * \example demo_std_tsi_int.c
+ */
+
+############################## UART Examples ################################
+/**
+ * \example demo_hw_uart_int.c
+ * \example demo_hw_uart_polling.c
+ * \example demo_hw_uart_rx_dma.c
+ * \example demo_std_uart_int.c
+ * \example demo_std_uart_polling.c
+ * \example demo_std_uart_ringbuf.c
+ */
+
+############################## WDT Examples #################################
+/**
+ * \example demo_hw_wdt.c
+ * \example demo_std_wdt.c
+ */
+ 
+############################## LPTMR Examples ##############################
+/**
+ * \example demo_hw_lptmr_timer.c
+ * \example demo_std_lptmr_timer.c
+ */
+
+############################## I2S Examples #################################
+/**
+ * \example demo_hw_i2s_polling.c
+ * \example demo_hw_i2s_int.c
+ */
+ 
+
+ ############################## PMU Examples #################################
+/**
+ * \example demo_std_pmu_lowpower.c
+ */

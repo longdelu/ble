@@ -1,0 +1,68 @@
+/**
+@~ @anchor main_page
+@~english @mainpage Home page
+@~chinese @mainpage 首页
+
+@~english @section sec_introduction Introduction
+@~chinese @section sec_introduction AMetal简介
+@~english As the picture below shows,The AMetal is divided into three layers:
+          HW layer,Driver layer and standard interface layer.\n
+@~chinese 如图所示，AMetal共分为3层，HW层、驱动层、标准接口层。
+
+@~english \image html framework.jpg "The framework of AMetal"
+@~chinese \image html framework.jpg "AMetal框架"
+
+@~english According to the actual demand,The user application can use all of 
+          the three layers interface.
+          
+@~english In addition,for Apollo or other OS,They can use the standard interface layer 
+          to develop the peripherals drivers,if do this,In the future,Needn't develop different 
+          drivers for some different peripherals which provide same service for apollo or other OS.
+
+@~chinese 根据实际需求，这三层对应的接口均可被应用程序使用。
+          
+@~chinese 对于Apollo平台或者其他操作系统，它们可以使用AMetal的标准接口层接口开发相关外设的驱动。
+          这样，Apollo或者其它操作系统在以后的使用过程中，针对提供相同标准服务的不同外设，
+          不需要再额外开发相对应的驱动。
+
+@~english @section sec_modules Modules
+@~chinese @section sec_modules 模块
+@~english The all modules are as follows:
+@~chinese 所有模块如下所示:
+@~ <hr>
+@~ @ref am_service_hardware \n
+@~english Provide register access and basic hardware service, e.g. USART, TIMER, ADC
+@~chinese 提供寄存器访问接口的基本的硬件操作服务，例如串口、定时器、模数转换
+ 
+@~ <hr>
+@~ @ref am_service_drivers \n
+@~english Provide all peripherals drivers, e.g. GPIO, UART, I2C
+@~chinese 提供所有外设的驱动，例如 GPIO、UART、I2C等硬件设备
+ 
+@~ <hr>
+@~ @ref am_service_standard \n
+@~english Provide standard interface, e.g. GPIO, UART, I2C
+@~chinese 提供操作硬件设备的标准接口，例如 GPIO、UART、I2C等硬件设备
+
+@~ <hr>
+@~ @ref am_service_util \n
+@~english Provide common tools, e.g. ring buffer, bit operation
+@~chinese 提供通用工具，例如环形缓冲区、位操作等服务
+@~ <hr>
+
+@~ @ref am_service_demo_device \n
+@~english Provide demos for devices, e.g. SPI, I2C, UART
+@~chinese 提供外设使用例程，例如SPI、I2C，UART
+@~ <hr>
+
+@~ @ref am_service_examples_user_config \n
+@~english Provide examples for user configure, e.g. SPI, I2C, UART.The user can
+          change the configure information according to the actual situation.
+@~chinese 提供外设用户配置文件范例，例如SPI、I2C、UART，用户可根据自己的需要修改配置信息.
+@~ <hr>
+
+\n
+Copyright &copy; 2001-2015 Guangzhou ZHIYUAN Electronics Stock Co., Ltd. All rights reserved.\n
+http://www.zlg.cn/
+
+*/

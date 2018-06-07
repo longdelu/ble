@@ -1,0 +1,13 @@
+.\debug\amdr_tsi.o: ..\..\..\ametal\amks16z\drivers\source\amdr_tsi.c
+.\debug\amdr_tsi.o: ..\..\..\ametal\amks16z\drivers\include\amdr_tsi.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\common\include\am_types.h
+.\debug\amdr_tsi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\debug\amdr_tsi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\common\include\am_errno.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\amks16z\hw\include\amhw_tsi.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\common\include\am_bitops.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\amks16z\hw\include\amhw_amks16z.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\CMSIS\Include\core_cm0plus.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\CMSIS\Include\core_cmInstr.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\CMSIS\Include\core_cmFunc.h
+.\debug\amdr_tsi.o: ..\..\..\ametal\common\include\am_int.h
